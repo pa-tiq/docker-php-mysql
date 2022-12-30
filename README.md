@@ -1,3 +1,5 @@
+Para executar o código, instale o [https://docs.docker.com/get-docker/](Docker).
+
 Rodar os seguinte comando na pasta do projeto:
 
 ### `docker-compose up`
