@@ -3,6 +3,7 @@ include 'functions.php';
 // Connect to MySQL
 $pdo = pdo_connect_mysql();
 // MySQL query that selects all the images
+$stmt = $pdo->query('CREATE TABLE IF NOT EXISTS images (id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, title TEXT NOT NULL, description TEXT NOT NULL, filepath TEXT NOT NULL, uploaded_date DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;');
 $stmt = $pdo->query('SELECT * FROM images ORDER BY uploaded_date DESC');
 $images = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
