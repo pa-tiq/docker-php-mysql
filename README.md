@@ -1,3 +1,5 @@
+Geleria de imagens simples feita com PHP e MySQL, rodando em um Docker container.
+
 Para executar o código, instale o [https://docs.docker.com/get-docker/](Docker).
 
 Rodar os seguinte comando na pasta do projeto:
